@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-white">
       <Navbar />
       <Hero
         title="The Digital Core for Modern Banking"
@@ -13,7 +13,7 @@ export default function Home() {
         primaryCta={
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center rounded-md bg-red-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-red-900/40 ring-1 ring-white/10 transition hover:bg-red-500"
+            className="inline-flex items-center justify-center rounded-md bg-red-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-red-500"
           >
             Book a Demo
           </Link>
@@ -21,7 +21,7 @@ export default function Home() {
         secondaryCta={
           <a
             href="#"
-            className="inline-flex items-center justify-center rounded-md border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            className="inline-flex items-center justify-center rounded-md border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-50"
           >
             Download Brochure
           </a>

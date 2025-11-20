@@ -9,13 +9,13 @@ export function ValuePillars() {
     { icon: Network, title: 'API-Driven Technology' },
   ]
   return (
-    <section className="bg-black py-16">
+    <section className="bg-white py-16">
       <div className="mx-auto max-w-7xl px-4">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {items.map((it) => (
-            <div key={it.title} className="rounded-xl border border-white/10 bg-gradient-to-b from-slate-900 to-slate-950 p-5 text-center">
-              <it.icon className="mx-auto mb-3 h-7 w-7 text-red-500" />
-              <div className="text-sm font-semibold text-white">{it.title}</div>
+            <div key={it.title} className="rounded-xl border border-slate-200 bg-gradient-to-b from-white to-slate-50 p-5 text-center">
+              <it.icon className="mx-auto mb-3 h-7 w-7 text-red-600" />
+              <div className="text-sm font-semibold text-slate-900">{it.title}</div>
             </div>
           ))}
         </div>
@@ -33,11 +33,11 @@ export function FeaturedProducts() {
     { name: 'Ocoplex', desc: 'Executive Governance Automation', to: '/products/ocoplex' },
   ]
   return (
-    <section className="bg-gradient-to-b from-black to-slate-950 py-16">
+    <section className="bg-gradient-to-b from-white to-slate-50 py-16">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mb-8 flex items-end justify-between">
-          <h2 className="text-2xl font-bold text-white sm:text-3xl">Featured Products</h2>
-          <Link to="/products" className="text-sm font-semibold text-red-400 hover:text-red-300">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Featured Products</h2>
+          <Link to="/products" className="text-sm font-semibold text-red-600 hover:text-red-500">
             View all
           </Link>
         </div>
@@ -46,14 +46,14 @@ export function FeaturedProducts() {
             <Link
               key={p.name}
               to={p.to}
-              className="group rounded-xl border border-white/10 bg-slate-900/60 p-5 transition hover:border-red-500/40 hover:bg-slate-900"
+              className="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md"
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <div className="text-lg font-bold text-white">{p.name}</div>
-                  <div className="text-sm text-slate-300">{p.desc}</div>
+                  <div className="text-lg font-bold text-slate-900">{p.name}</div>
+                  <div className="text-sm text-slate-600">{p.desc}</div>
                 </div>
-                <ArrowRight className="h-5 w-5 text-slate-400 transition group-hover:translate-x-1 group-hover:text-red-400" />
+                <ArrowRight className="h-5 w-5 text-slate-400 transition group-hover:translate-x-1 group-hover:text-red-600" />
               </div>
             </Link>
           ))}
@@ -72,14 +72,14 @@ export function ServicesOverview() {
     { title: 'BFSI Technology Advisory' },
   ]
   return (
-    <section className="bg-black py-16">
+    <section className="bg-white py-16">
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-8 text-2xl font-bold text-white sm:text-3xl">Services</h2>
+        <h2 className="mb-8 text-2xl font-bold text-slate-900 sm:text-3xl">Services</h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((s) => (
-            <div key={s.title} className="rounded-xl border border-white/10 bg-slate-900/60 p-6">
-              <div className="text-base font-semibold text-white">{s.title}</div>
-              <p className="mt-2 text-sm text-slate-300">
+            <div key={s.title} className="rounded-xl border border-slate-200 bg-slate-50 p-6">
+              <div className="text-base font-semibold text-slate-900">{s.title}</div>
+              <p className="mt-2 text-sm text-slate-600">
                 Enterprise-grade delivery with measurable outcomes for BFSI.
               </p>
             </div>
@@ -92,15 +92,15 @@ export function ServicesOverview() {
 
 export function CaseStudyPreview() {
   return (
-    <section className="bg-gradient-to-b from-slate-950 to-black py-16">
+    <section className="bg-gradient-to-b from-slate-50 to-white py-16">
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-8 text-2xl font-bold text-white sm:text-3xl">Case Studies</h2>
+        <h2 className="mb-8 text-2xl font-bold text-slate-900 sm:text-3xl">Case Studies</h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {Array.from({ length: 3 }).map((_, i) => (
-            <div key={i} className="rounded-xl border border-white/10 bg-slate-900/60 p-5">
-              <div className="h-36 rounded-lg bg-white/5" />
-              <div className="mt-3 text-sm font-semibold text-white">Transforming digital banking</div>
-              <Link to="/case-studies" className="mt-2 inline-flex items-center text-xs font-semibold text-red-400">
+            <div key={i} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+              <div className="h-36 rounded-lg bg-slate-100" />
+              <div className="mt-3 text-sm font-semibold text-slate-900">Transforming digital banking</div>
+              <Link to="/case-studies" className="mt-2 inline-flex items-center text-xs font-semibold text-red-600">
                 Read More
               </Link>
             </div>
@@ -113,14 +113,14 @@ export function CaseStudyPreview() {
 
 export function CaseLogos() {
   return (
-    <section className="bg-gradient-to-b from-black to-slate-950 py-14">
+    <section className="bg-gradient-to-b from-white to-slate-50 py-14">
       <div className="mx-auto max-w-7xl px-4">
-        <div className="mb-6 text-center text-sm font-semibold uppercase tracking-widest text-slate-400">
+        <div className="mb-6 text-center text-sm font-semibold uppercase tracking-widest text-slate-500">
           Trusted by leading BFSI brands
         </div>
         <div className="grid grid-cols-2 place-items-center gap-6 sm:grid-cols-3 md:grid-cols-5">
           {Array.from({ length: 10 }).map((_, i) => (
-            <div key={i} className="h-10 w-28 rounded bg-white/5" />
+            <div key={i} className="h-10 w-28 rounded bg-slate-200" />
           ))}
         </div>
       </div>
@@ -130,29 +130,29 @@ export function CaseLogos() {
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-black">
+    <footer className="border-t border-slate-200 bg-white">
       <div className="mx-auto max-w-7xl px-4 py-10">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="text-lg font-bold text-white">Synapsys</div>
-            <p className="mt-2 text-sm text-slate-300">FinTech and digital banking solutions for forward-thinking institutions.</p>
+            <div className="text-lg font-bold text-slate-900">Synapsys</div>
+            <p className="mt-2 text-sm text-slate-600">FinTech and digital banking solutions for forward-thinking institutions.</p>
           </div>
           {['Products','Services','Industries','Company'].map((h) => (
             <div key={h}>
-              <div className="text-sm font-semibold text-slate-200">{h}</div>
-              <ul className="mt-3 space-y-2 text-sm text-slate-400">
+              <div className="text-sm font-semibold text-slate-900">{h}</div>
+              <ul className="mt-3 space-y-2 text-sm text-slate-600">
                 {['Link 1','Link 2','Link 3','Link 4'].map((l) => (
-                  <li key={l}><a href="#" className="hover:text-red-400">{l}</a></li>
+                  <li key={l}><a href="#" className="hover:text-red-600">{l}</a></li>
                 ))}
               </ul>
             </div>
           ))}
         </div>
-        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-slate-200 pt-6 text-xs text-slate-500 sm:flex-row">
           <div>© {new Date().getFullYear()} Synapsys. All rights reserved.</div>
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:text-red-400">LinkedIn</a>
-            <a href="#" className="hover:text-red-400">Twitter</a>
+            <a href="#" className="hover:text-red-600">LinkedIn</a>
+            <a href="#" className="hover:text-red-600">Twitter</a>
           </div>
         </div>
       </div>

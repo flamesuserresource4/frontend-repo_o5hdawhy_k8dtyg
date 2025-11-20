@@ -11,24 +11,24 @@ const items = [
 
 export default function Services() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-white">
       <Navbar />
       <section className="mx-auto max-w-7xl px-4 py-16">
-        <h1 className="text-3xl font-extrabold text-white sm:text-4xl">Services</h1>
-        <p className="mt-2 max-w-2xl text-slate-300">Trusted delivery for mission-critical BFSI initiatives.</p>
+        <h1 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">Services</h1>
+        <p className="mt-2 max-w-2xl text-slate-600">Trusted delivery for mission-critical BFSI initiatives.</p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((s) => (
-            <div key={s.title} className="rounded-xl border border-white/10 bg-slate-900/60 p-6">
-              <div className="text-lg font-semibold text-white">{s.title}</div>
-              <div className="mt-1 text-sm text-slate-300">{s.desc}</div>
+            <div key={s.title} className="rounded-xl border border-slate-200 bg-slate-50 p-6">
+              <div className="text-lg font-semibold text-slate-900">{s.title}</div>
+              <div className="mt-1 text-sm text-slate-600">{s.desc}</div>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 rounded-xl bg-gradient-to-r from-red-700 to-red-500 p-8 text-white">
+        <div className="mt-12 rounded-xl bg-gradient-to-r from-red-600 to-red-500 p-8 text-white">
           <div className="text-xl font-bold">Let’s discuss your transformation journey</div>
-          <a href="/contact" className="mt-3 inline-flex rounded-md bg-black/30 px-4 py-2 text-sm font-semibold">Book a consultation</a>
+          <a href="/contact" className="mt-3 inline-flex rounded-md bg-white/10 px-4 py-2 text-sm font-semibold">Book a consultation</a>
         </div>
       </section>
       <Footer />
